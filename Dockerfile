@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the application
-CMD ["python", "server_sqlite.py"]
+CMD ["python", "server.py"]
