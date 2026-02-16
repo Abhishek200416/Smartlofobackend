@@ -763,7 +763,11 @@ app.add_middleware(
         "http://localhost:3000",
         "https://zbfk9g1k-8000.asse.devtunnels.ms",
         "http://localhost:3000/",
-        "https://zbfk9g1k-8000.asse.devtunnels.ms/"
+        "https://smartlofobackend-dqapnowpq-smartlofos-projects.vercel.app",
+        "https://smartlofofrontend1-t2ofvysr4-smartlofos-projects.vercel.app",
+        "https://smartlofofrontend1.vercel.app",
+        "https://zbfk9g1k-8000.asse.devtunnels.ms/",
+        "https://smartlofobackend-production.up.railway.app",
     ],
     allow_methods=["*"],
     allow_headers=["*"],
