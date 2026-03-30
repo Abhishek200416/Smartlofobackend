@@ -9,7 +9,7 @@ echo "╚═══════════════════════�
 echo ""
 echo "Available backends:"
 echo "  1) MongoDB Backend (server.py) - Default"
-echo "  2) SQLite Backend (server_sqlite.py)"
+echo "  2) SQLite Backend (server.py)"
 echo "  3) Run both backends (MongoDB:8001, SQLite:8002)"
 echo "  4) Show backend status"
 echo "  5) Exit"
