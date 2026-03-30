@@ -768,6 +768,7 @@ app.add_middleware(
         "https://smartlofofrontend1.vercel.app",
         "https://zbfk9g1k-8000.asse.devtunnels.ms/",
         "https://smartlofobackend-production.up.railway.app",
+        "https://smartlofofrontend-production-6c62.up.railway.app/",
     ],
     allow_methods=["*"],
     allow_headers=["*"],
