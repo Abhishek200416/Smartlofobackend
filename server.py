@@ -42,7 +42,7 @@ EMAIL_USER = os.environ.get('EMAIL_USER')
 EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 
 # Create the main app
-app = FastAPI()
+
 api_router = APIRouter(prefix="/api")
 
 # Security
@@ -753,9 +753,9 @@ async def root():
     return {"message": "SmartLOFO API (SQLite) is running", "version": "1.0", "database": "SQLite"}
 
 
-# Include router
-app.include_router(api_router)
+app = FastAPI()
 
+# ✅ CORS FIRST
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
@@ -763,6 +763,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# ✅ Preflight handler
+@app.options("/{rest_of_path:path}")
+async def preflight_handler():
+    return {}
+
+# ✅ THEN include routes
+app.include_router(api_router)
 
 if __name__ == "__main__":
     import uvicorn
