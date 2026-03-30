@@ -759,17 +759,7 @@ app.include_router(api_router)
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://zbfk9g1k-8000.asse.devtunnels.ms",
-        "http://localhost:3000/",
-        "https://smartlofobackend-dqapnowpq-smartlofos-projects.vercel.app",
-        "https://smartlofofrontend1-t2ofvysr4-smartlofos-projects.vercel.app",
-        "https://smartlofofrontend1.vercel.app",
-        "https://zbfk9g1k-8000.asse.devtunnels.ms/",
-        "https://smartlofobackend-production.up.railway.app",
-        "https://smartlofofrontend-production-6c62.up.railway.app",
-    ],
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
