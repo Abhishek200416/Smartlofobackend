@@ -1,1 +1,1 @@
-web: python server_sqlite.py
+web: python server.py
